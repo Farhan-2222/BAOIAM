@@ -46,6 +46,10 @@ section:not(.contact-us, .footer-container, #courses, .section-4) {
   padding: 1rem 6%;
 }
 
+h1,h2,h3,h4,h5,h6{
+  color:rgb(1, 1, 68)
+}
+
 img {
   width: 100%;
 }
@@ -331,6 +335,11 @@ header .nav-item a:hover {
     padding-left: 18px;
     padding-right: 18px;
   }
+  .boxes{
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  
 }
 
 /* Courses */
@@ -342,11 +351,13 @@ header .nav-item a:hover {
 .courses h1{
   text-align: center;
   font-weight: 700;
+  position: relative;
+  top: 20px;
 }
 
 .courses p.sub-heading{
   width: 70%;
-  margin: 2rem auto 4rem;
+  margin: 2rem auto 3rem;
   text-align: center;
   font-weight: 500;
   color: #757575;
@@ -434,6 +445,7 @@ header .nav-item a:hover {
     font-size: 16px;
     text-align: justify;
     width: 100%;
+    margin-bottom: 2rem;
   }
 }
 
@@ -682,9 +694,11 @@ section.expert .about h4{
     margin-bottom: 0;
 }
 
+
 @media (max-width: 576px){
   section.expert{
     padding: 1rem 0;
+    margin-bottom: 1rem;
   }
   section.expert .wrapper{
     padding: 0 24px;
@@ -709,8 +723,7 @@ section.expert .about h4{
 /* Contact us section */
 section.contact-us{
   width: 97vw;
-  margin-top: 6rem;
-  margin-bottom: 8rem;
+  padding: 0;
 }
 
 section.contact-us .left{
@@ -834,10 +847,7 @@ p.virtues-sub-heading{
 }
 
 /* Home Blog Section */
-section{
-  transition: all 0.4s ease;
-  padding: 130px 2%;
-}
+
 
 .we__offer {
   margin-top: 30px;
@@ -1069,6 +1079,7 @@ img{
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 4px;
+  color:rgb(1, 1, 68);
 }
 
 #downloads .nav-item{
@@ -1157,8 +1168,7 @@ section div.wrapper{
 
 @media (max-width: 576px){
   section.section-4{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
   }
   #downloads{
     padding-left: 0;
