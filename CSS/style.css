@@ -382,6 +382,18 @@ header .nav-item a:hover {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
 }
 
+@media (max-width: 768px) {
+  .card-deck {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .card {
+    flex: 0 0 auto;
+    width: 300px;
+  }
+}
+
 @media (max-width: 576px){
   .courses{
     padding-left: 15px;
