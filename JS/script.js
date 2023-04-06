@@ -87,7 +87,7 @@ function showEase(){
 
 const progressCircle = document.querySelector(".autoplay-progress svg");
 const progressContent = document.querySelector(".autoplay-progress span");
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiperr", {
   
 
     slidesPerView: 3,
