@@ -132,15 +132,12 @@ header .nav-item a:hover {
   bottom: 5rem;
 }
 
-@media (max-width:768px) {
-  .imginfo{
-    position: inherit;
-    left: 0;
-  }
-}
-
 .infoimg{
   padding-top: 0;
+}
+
+.responsive{
+  display: none;
 }
 
 .heading2{
@@ -211,6 +208,49 @@ header .nav-item a:hover {
 }
 
 
+@media (max-width:768px) {
+  .imginfo{
+    position: inherit;
+    left: 0;
+  }
+}
+
+@media (max-width: 600px){
+  .home-section .row h2 {
+    font-size: 3.3rem;
+  }
+  .responsive{
+    display: block;
+  }
+  .laptop{
+    display: none;
+  }
+  .home-section .row p:not(.about-slide) {
+    margin-right: 0;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 474px){
+  .home-section .row h2 {
+    font-size: 2.8rem;
+  }
+  .home-section .row p:not(.about-slide){
+    font-size: 15px;
+  }
+  .btn-1, .btn-2{
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 390px){
+  .home-section .row h2 {
+    font-size: 28px;
+  }
+}
+
+
 /* Boxes(Descriptions) */
 .boxes{
   padding: 4rem 0% 6rem;
@@ -253,6 +293,19 @@ header .nav-item a:hover {
 
 .row-first:hover p{
   color: #fff!important;
+}
+
+@media (max-width: 500px){
+  .div_text h2{
+    font-size: 23px;
+  }
+  .row_first p{
+    font-size: 14px;
+  }
+  .row_first p{
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 }
 
 /* Courses */
@@ -329,6 +382,24 @@ header .nav-item a:hover {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
 }
 
+@media (max-width: 576px){
+  .courses{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .courses h1{
+    font-size: 28px;
+    position: relative;
+    top: 20px;
+  }
+  .courses p.sub-heading{
+    font-size: 16px;
+    text-align: justify;
+    width: 100%;
+  }
+}
+
 /* Enhance skill section */
 .section-3 .horizon h2{
   font-size: 3.5rem;
@@ -382,17 +453,71 @@ header .nav-item a:hover {
 }
 
 .section-3 .explore-btn{
-  position: absolute; 
+  position: relative; 
   margin-top: 1.5rem;
+  top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .section-3 .horizon-sub-heading b{
   color: #000000;
 }
 
-/* .section-combined .horizon p{
-  font-size: 1rem;
-} */
+.queries p{
+  margin-bottom: 0;
+}
+
+.queries a{
+  position: relative;
+  /* bottom: 10px; */
+}
+
+.horizon .row .mentors h4{
+  text-align: center;
+}
+
+.mentors-outer-div{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 576px){
+  .section-3 .horizon h2{
+    font-size: 25px;
+    margin-top: 35px;
+  }
+  .section-3 .horizon .horizon-sub-heading{
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .horizon .row p{
+    padding-left: 0;
+  }
+  .horizon .queries{
+    text-align: center;
+  }
+  .mentors-outer-div{
+    margin-top: 0;
+  }
+  .section-3 .horizon .mentors span{
+    font-size: 28px;
+    top: 4px;
+  }
+  .section-3 .horizon .mentors h4{
+    font-size: 21px;
+  }
+  .queries-outer-div{
+    bottom: 15px;
+  }
+  .section-3 .text-left .button{
+    text-align: center;
+  }
+  .btn-1{
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
 
 
 /* How we work section */
@@ -423,7 +548,7 @@ section.work .contents .steps{
 }
 
 section.work .contents .steps:not(.last)::after{
-  content: url('./images/arrow.png');
+  content: url('../images/arrow.png');
   position: absolute;
   display: inline-block;
   top: -30px;
@@ -441,6 +566,37 @@ section.work .contents h5{
 
 section.work .contents p{
   color:#5e5e5e;
+}
+
+@media (max-width: 576px){
+  section.work h1{
+    font-size: 25px;
+  }
+  section.work p.sub-heading{
+    font-size: 15px;
+    width: 90vw;
+    text-align: justify;
+  }
+  section.work{
+    padding: 3rem 20px 6rem;
+  }
+  section.work .contents .steps:not(.last)::after{
+    display: none;
+  }
+  section.work .contents .steps img{
+    max-width: 165px;
+  }
+  /* section.work .contents{
+    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+    grid-gap: 1.3rem;
+  } */
+  section.work .contents h5{
+    font-size: 18px;
+  }
+  section.work .contents p{
+    font-size: 14px;
+    text-align: justify;
+  }
 }
 
 /* Expert section */
@@ -487,6 +643,21 @@ section.expert .about h4{
     color: #000000;
     font-weight: 700;
     margin-bottom: 0;
+}
+
+@media (max-width: 576px){
+  section.expert{
+    padding: 1rem 0;
+  }
+  section.expert .text{
+    font-size: 13px;
+  }
+  section.expert h1{
+    font-size: 26px;
+  }
+  section.expert p.line::before{
+    display: none;
+  }
 }
 
 
@@ -556,6 +727,31 @@ section.contact-us .right p, section.contact-us .right h5{
     padding: 10px 20px;
 }
 
+@media (max-width: 576px){
+  section.contact-us .left{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  section.contact-us .left h1{
+    font-size: 25px;
+    width: 100%;
+  }
+  section.contact-us .left p{
+    width: 100%;
+    font-size: 15px;
+  }
+  .contact-us img{
+    position: relative;
+    left: 30px;
+    width: 60px;
+    height: 50px;
+  }
+  .contact-us .btn{
+    border-radius: 5.5px;
+    margin-top: 25px;
+  }
+}
+
 /* Virtues and Protocols */
 
 #virtues-tab-1-content,
@@ -564,11 +760,6 @@ section.contact-us .right p, section.contact-us .right h5{
 	display: none;
 	opacity: 0;
 }
-
-/* p.virtues-tab-item{
-  display: flex;
-  flex-direction: row;
-} */
 
 p.virtues-sub-heading{
   font-size: 1rem;
@@ -811,55 +1002,7 @@ img{
     width: 100%;
 }
 
-@media (max-width: 991px) {
-    /* section.contact-us .right h5, section.contact-us .right p{
-    text-align: center;
-    } */
 
-    section.expert p.line{
-        display: none;
-    }
-    /* section.contact-us .right .orange-bg{
-        margin: 15px 0 15px 30vw;
-    } */
-}
-
-@media (max-width: 991px) and (min-width: 576px){
-    section.expert h1{
-        font-size: 3.5rem;
-        margin-bottom: 30px;
-    }
-    section.contact-us .right .outer p{
-        font-size: 0.85rem;
-    }
-}
-
-@media (max-width: 576px){
-    section.expert h1{
-        font-size: 2.8rem;
-        margin-bottom: 30px;
-    }
-
-    section.contact-us .left h1{
-        font-size: 1.5rem;
-    }
-    section.contact-us .right .orange-bg{
-        margin-top: 20px;
-    }
-    section.contact-us .right img{
-        width: 60px;
-        height: auto;
-    }
-    section.contact-us .right .outer p{
-        font-size: 0.8rem;
-    }
-}
-/* 
-@media (max-width: 450px){
-  section.contact-us img{
-    width: 80px;
-  }
-} */
 
 
 /* tabs and tabs content section */
@@ -949,6 +1092,39 @@ section div.wrapper{
   color: #03003f;
   font-size: 1.1rem;
   font-weight: 600;
+}
+
+@media (max-width: 576px){
+  section.section-4{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #downloads{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #downloads .nav{
+    position: relative;
+    top: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  #downloads p{
+    font-size: 17px;
+  }
+  #downloads .nav-item{
+    margin-bottom: 15px;
+    margin-right: 20px;
+  }
+  .section-4 .current-tab::after{
+    display: none;
+  }
+  section.section-4 .tabs-content-heading{
+    font-size: 24px;
+  }
+  .section-4 .tab-content-item .tabs-content-subheading, .section-4 .tab-content-item .row .list p{
+    font-size: 15px;
+  }
 }
 
 /* Subscribe */
