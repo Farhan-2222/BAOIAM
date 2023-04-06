@@ -325,6 +325,11 @@ header .nav-item a:hover {
   color: #fff!important;
 }
 
+.virtues-heading{
+  font-size: 23px;
+  font-weight: 700;
+}
+
 @media (max-width: 767px){
   .div_text p{
     transform: translateX(0);
@@ -347,7 +352,8 @@ header .nav-item a:hover {
     padding-top: 0;
   }
   .virtues-heading{
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 700;
   }
   .virtues-sub-heading{
     font-size: 15px;
