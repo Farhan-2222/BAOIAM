@@ -689,8 +689,13 @@ section.expert .about h4{
   section.expert .wrapper{
     padding: 0 24px;
   }
+  section.expert .wrapper .row .col-lg-12, section.expert .wrapper .row .row .col-lg-6{
+    padding:0;
+  }
   section.expert .text{
     font-size: 13px;
+    text-align: justify;
+
   }
   section.expert h1{
     font-size: 26px;
