@@ -42,7 +42,7 @@ a{
   text-decoration: none !important;
 }
 
-section:not(.contact-us, .footer-container, #courses) {
+section:not(.contact-us, .footer-container, #courses, .section-4) {
   padding: 1rem 6%;
 }
 
