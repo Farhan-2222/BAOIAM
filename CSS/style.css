@@ -672,6 +672,9 @@ section.expert .about h4{
   section.expert{
     padding: 1rem 0;
   }
+  .home-section .row h2 br{
+    display: none;
+  }
   section.expert .text{
     font-size: 13px;
   }
