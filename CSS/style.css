@@ -42,7 +42,7 @@ a{
   text-decoration: none !important;
 }
 
-section:not(.contact-us, .footer-container, #courses, .section-4) {
+section:not(.contact-us, .footer-container, #courses, .section-4, .carousel-inner) {
   padding: 1rem 6%;
 }
 
@@ -164,10 +164,6 @@ header .nav-item a:hover {
   background: rgb(245, 69, 0);
 }
 
-.carousel2{
-  margin-top: 5rem;
-}
-
 
 .special {
   background: linear-gradient(45deg, #fa2424, #fb8721);
@@ -177,6 +173,16 @@ header .nav-item a:hover {
   -webkit-text-fill-color: transparent;
   font-size: 1.6rem;
   /* position: absolute; */
+}
+
+.carousel-inner{
+  padding: 1rem 6%;
+}
+
+@media (max-width: 576px){
+  .carousel-inner{
+    padding: 0 15px;
+  }
 }
 
 .home-btn {
@@ -993,10 +999,27 @@ line-height:1.7rem;
 
 .swipe{
 /* background-color: #6221fb; */
-padding:150px 5% ;
-
+padding: 0 5% ;
 }
 
+.swipe-heading p{
+  text-align: center;
+}
+
+.swipe-heading h1{
+  text-align: center;
+  font-weight: 700;
+}
+
+@media (max-width: 576px){
+  .swipe-heading h1{
+    font-size: 25px;
+  }
+  .swipe-heading p{
+    font-size: 15px;
+    text-align: justify;
+  }
+}
 
 .we__offer .swipe-heading{
 text-align: center;
@@ -1056,11 +1079,6 @@ gap: 0.9rem;
 }
 
 @media (max-width: 900px) {
-.swipe{
-padding-top: 70px ;
-padding-bottom: 40px;
-
-}
 .we__offer_card {
   width: 430px; 
 }
@@ -1081,10 +1099,6 @@ padding: 0px;
 
 
 @media (max-width: 450px) {
-.swipe{
-  padding-top: 50px ;
-  padding-bottom: 30px;
-}
 .we__offer .swipe-heading h1{
 
 font-size: 1.1rem;
@@ -1182,7 +1196,8 @@ img{
 
 @media (max-width: 576px){
   section.startups h5{
-    font-size: 19px;
+    font-size: 20px;
+    text-align: left;
   }
 }
 
