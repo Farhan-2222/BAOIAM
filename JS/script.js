@@ -13,7 +13,7 @@ window.addEventListener("scroll", function () {
 
 
 $('.carousel').carousel({
-  interval: 3000
+  interval: 7000
 })
 
 
@@ -68,7 +68,6 @@ function showTrainer(){
 	document.getElementById('virtues-tab-1-content').style.display="none";
 	document.getElementById('virtues-tab-3-content').style.display="none";
 }
-
 function showFulltime(){
 	document.querySelector('#virtues-tab-1 .fa').style.color="red"
 	document.querySelector('#virtues-tab-2 .fa').style.color="white"
