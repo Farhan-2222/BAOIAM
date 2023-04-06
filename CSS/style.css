@@ -997,6 +997,11 @@ padding-left: 20px;
 section.startups {
   margin-top: -40px;
 }
+
+section.startups .wrapper{
+  padding:0;
+}
+
 section.startups h5{
     font-weight: 700;
     text-align: center;
@@ -1014,7 +1019,11 @@ img{
     width: 100%;
 }
 
-
+@media (max-width: 576px){
+  section.startups h5{
+    font-size: 19px;
+  }
+}
 
 
 /* tabs and tabs content section */
