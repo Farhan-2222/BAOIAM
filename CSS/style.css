@@ -1259,6 +1259,12 @@ section div.wrapper{
   background: -webkit-linear-gradient(45deg, #ff8000, #ff0000);
 }
 
+@media (max-width: 576px){
+  .form input{
+    padding: 9px 1rem;
+  }
+}
+
 
 /* Footer section */
 footer{
