@@ -321,23 +321,39 @@
 
 
   <!-- Virtues and Protocol section -->
-  <section class="section-3 mt-5 mb-5">
+  <section class="section-3 mt-5 mb-5 virtues">
     <div class="row">
       <div class="col-md-7 col-sm-12 text-left">
         <div class="horizon" style="border-bottom: 0;">
           <h2 class="heading mb-4">Virtues and protocols <span class="underline">BAOIAM</span> works on</h2>
           <div class="row mx-1 ">
-            <p class="col-md-5"><input id="virtues-tab-1" type="radio" class="col-lg-2 virtues-tab-item" name="radioA" checked> FULL-TIME SUPPORT</p>
-            <p class="col-md-5"><input id="virtues-tab-2" type="radio" class="col-lg-2 virtues-tab-item" name="radioA"> EXPERIENCED TRAINERS</p>
-            <p class="col-md-5"><input id="virtues-tab-3" type="radio" class="col-lg-2 virtues-tab-item" name="radioA"> EASE OF USE</p>
+            <p id="virtues-tab-1" class="col-md-5 virtue" onclick="showFulltime()">
+              <i class="fa fa-check"></i>FULL-TIME SUPPORT
+
+              <!-- <input onclick="showFulltime()" id="virtues-tab-1" type="radio" class="col-lg-2 virtues-tab-item"
+                name="radioA" checked> FULL-TIME SUPPORT -->
+            </p>
+            <p onclick="showTrainer()" id="virtues-tab-2" class="col-md-5 virtue">
+              <i class="fa fa-check"></i>EXPERIENCED TRAINERS
+
+
+              <!-- <input onclick="showTrainer()" id="virtues-tab-2" type="radio" class="col-lg-2 virtues-tab-item"
+                name="radioA"> EXPERIENCED TRAINERS -->
+            </p>
+            <p onclick="showEase()" class="col-md-5 virtue" id="virtues-tab-3">
+              <i class="fa fa-check"></i>EASE OF USE
+              <!-- <input onclick="showEase()" id="virtues-tab-3" type="radio"
+                class="col-lg-2 virtues-tab-item" name="radioA"> EASE OF USE -->
+              </p>
           </div>
 
-          <div id="virtues-tab-1-content" class="virtues-tab-content-item show">
+          <div id="virtues-tab-1-content" class="virtues-tab-content-item">
             <div class="row">
-              <div class="col-lg-5 col-md-5 col-sm-5 col-5">
-                <img src="images/learner.png" alt="">
+              <div class="col-lg-5">
+                <img src="images/Full time support/1.jpg" alt="">
               </div>
-              <div class="col-lg-5 col-md-5 col-sm-7 col-7">
+              <div class="col-lg-5">
+                <h1 class="virtues-heading">FULL-TIME SUPPORT</h1>
                 <p class="virtues-sub-heading">
                   BAOIAM is an E-learning platform that focuses on the overall skill
                   development of it's learners by furnishing courses in a variety of disciplines that can help anyone
@@ -351,11 +367,13 @@
           <div id="virtues-tab-2-content" class="virtues-tab-content-item">
             <div class="row">
               <div class="col-lg-5">
-                <img src="images/learner.png" alt="">
+                <img src="images/Full time support/2.jpg" alt="">
               </div>
               <div class="col-lg-5">
+                <h1 class="virtues-heading">EXPERIENCED TRAINERS</h1>
                 <p class="virtues-sub-heading">
-                  The guidance and expertise that the learner receives from the course is of a lifetime experience as our skilled Trainers give their best to provide you with a remembering experience.
+                  The guidance and expertise that the learner receives from the course is of a lifetime experience as
+                  our skilled Trainers give their best to provide you with a remembering experience.
                 </p>
               </div>
             </div>
@@ -365,11 +383,13 @@
           <div id="virtues-tab-3-content" class="virtues-tab-content-item">
             <div class="row">
               <div class="col-lg-5">
-                <img src="images/learner.png" alt="">
+                <img src="images/Full time support/3.jpg" alt="">
               </div>
               <div class="col-lg-5">
+                <h1 class="virtues-heading">EASE OF USE</h1>
                 <p class="virtues-sub-heading">
-                  The user-friendly interface and intuitive design of our platform make the finest learning experience the
+                  The user-friendly interface and intuitive design of our platform make the finest learning experience
+                  the
                   platform is
                   easy to navigate and understand, making it accessible to people of all age groups and backgrounds.
                 </p>
@@ -383,6 +403,7 @@
       </div>
     </div>
   </section>
+
   
 
   <!-- How we work section -->
